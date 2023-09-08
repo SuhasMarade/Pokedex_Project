@@ -11,6 +11,7 @@ function PokemonDetails() {
     async function downloadPokemon(){
         const response = await axios.get(`https://pokeapi.co/api/v2/pokemon/${id}`)
         
+        
         setPokemon({
             name: response.data.name,
             image:response.data.sprites.other.dream_world.front_default,
